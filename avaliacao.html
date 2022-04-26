@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!--é uma declaração para informar ao navegador qual é a versão do HTML utilizada no arquivo.-->
+<html lang="pt-BR"> <!--ajuda a definir o idioma de um elemento-->
+
+<head> <!--providencia informações gerais (metadados) sobre o documento, incluindo seu título e links para scripts e folhas de estilos.-->
+    <meta charset="UTF-8"> <!--comunicar aos navegadores qual é o formato de codificação de caracteres utilizado naquele documento.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--1 para controlar as ações do browser e também especificam melhor as informações-->
+    <!--2 para gerar conteúdo em um elemento.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--fine qualquer informação de metadados que não podem ser definidos por outros elementos -->
+    </title> <!--define o título do documento, mostrado na barra de título de um navegador ou na aba da página.-->
+    <link rel="stylesheet" href="avaliacao.css"> <!--especifica as relações entre o documento atual e um recurso externo-->>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> <!--podemos redirecionar o usuário a outro documento ou recurso.-->
+</head>
+
+<body><!--tudo que estiver dentro da tag body será mostrado de alguma forma no conteúdo da página.-->
+
+    <main> <!--efine o conteúdo principal dentro do <body>-->
+        <div id="moviePoster"> <!--define uma div para mostrar um poster do filme-->
+            <div class="omdbrating"> <!--para exibir a faixa inclinada -->
+                <span id="icone"><i class="fa-solid fa-star"></i></span><!--para exibir a estrela-->
+
+                <span id="imdbRating">Score</span> <!--exibir a nota do filme -->
+            </div>
+        </div>
+
+        <div class="description"><!--div responsavel pela pesquisa e descriçao do filme-->
+
+            <form id="formSearch" action="">
+                <input id="title" type="text" placeholder="Informe o título do filme">
+                <input type="submit" value="Pesquisar">
+            </form><!--form responsavel pela pesquisa-->
+            <div id="descriptionBodyNotFound"><!--id que indentifica se o filme foi encontrado ou nao -->
+            </div>
+            <div id="descriptionBody"><!--div responsavel pela descricao do filme (titulo,ano,genero etc) -->
+                <h1 id="movieTitle">Titulo do filme</h1>
+                <p><span class="infoBlue" id="movieYear">ANO</span> <span id="movieGenre">GENERO DO FILME</span> <span
+                        class="infoBlue" id="movieRuntime">DURAÇÃO</span></p>
+                <p id="movieInfo">Descrição do filme.</p>
+                <p><strong></strong> <span id="movieWriter">Nome do escritor</span> </p>
+                <p><strong></strong> <span id="movieDirector">Nome do ditetor</span></p>
+            </div>
+
+            
+        </div>
+    </main>
+
+    <script src="avaliacao.js"></script><!--arquivo js responsavel pela logica do programa -->
+</body>
+
+</html>
